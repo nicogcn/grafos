@@ -32,7 +32,7 @@ public class Grafo {
         Vertice v1 = getVertice(vertice1);
         Vertice v2 = getVertice(vertice2);
         if (v1 != null && v2 != null) {
-            v1.getAristas().add(v2);
+            v1.getAdyacentes().add(v2);
         }
     }
 }

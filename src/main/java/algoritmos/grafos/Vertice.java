@@ -10,7 +10,7 @@ public class Vertice {
 
     String dato;
     
-    List<Vertice> aristas = new ArrayList<>();
+    List<Vertice> adyacentes = new ArrayList<>();
 
     public Vertice() {
     }
@@ -25,12 +25,12 @@ public class Vertice {
 
     
     
-    public List<Vertice> getAristas() {
-        return aristas;
+    public List<Vertice> getAdyacentes() {
+        return adyacentes;
     }
 
-    public void setAristas(List<Vertice> aristas) {
-        this.aristas = aristas;
+    public void setAdyacentes(List<Vertice> aristas) {
+        this.adyacentes = aristas;
     }
     
 }
