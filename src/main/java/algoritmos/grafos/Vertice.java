@@ -1,7 +1,11 @@
 package algoritmos.grafos;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
 /**
  * Vértice de un Grafo
@@ -12,6 +16,8 @@ public class Vertice {
     
     List<Vertice> adyacentes = new ArrayList<>();
 
+    Map<Vertice, String> mapaAdyacentes = new HashMap<>();
+    
     public Vertice() {
     }
 
@@ -23,14 +29,28 @@ public class Vertice {
         return dato;
     }
 
-    
-    
-    public List<Vertice> getAdyacentes() {
-        return adyacentes;
-    }
+    //---
 
-    public void setAdyacentes(List<Vertice> aristas) {
-        this.adyacentes = aristas;
+    public void agregarArista(Vertice vertice) {
+        String id = UUID.randomUUID().toString();
+        mapaAdyacentes.put(vertice, nombre);
+    }
+    
+    public void agregarArista(Vertice vertice, String nombre) {
+        mapaAdyacentes.put(vertice, nombre);
+    }
+        
+    public Collection<Vertice> getAdyacentes() {
+        return mapaAdyacentes.keySet();
+    }
+    
+    public String caminoPara(Vertice v) {
+        return mapaAdyacentes.get(v);
+    }
+    
+    @Override
+    public String toString() {
+        return "{" + dato + "}";
     }
     
 }
