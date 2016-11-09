@@ -1,6 +1,5 @@
 package algoritmos.grafos;
 
-import java.time.Clock;
 import java.util.ArrayList;
 import java.util.List;
 

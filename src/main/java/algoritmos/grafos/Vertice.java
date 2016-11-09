@@ -32,7 +32,7 @@ public class Vertice {
     //---
 
     public void agregarArista(Vertice vertice) {
-        String id = UUID.randomUUID().toString();
+        String nombre = UUID.randomUUID().toString();
         mapaAdyacentes.put(vertice, nombre);
     }
     
