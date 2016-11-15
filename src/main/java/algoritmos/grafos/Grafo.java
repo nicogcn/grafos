@@ -43,5 +43,11 @@ public class Grafo {
             v1.agregarArista(v2, nombre);
         }
     }
-    
+    public void imprimeVertices(){
+    	int n = 1;
+    	for (Vertice vertice : vertices) {
+			System.out.println( "ver" + n + " " + vertice.getDato() );
+			n++;
+		}
+    }    
 }
