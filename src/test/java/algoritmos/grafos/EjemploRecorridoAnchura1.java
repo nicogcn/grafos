@@ -29,7 +29,7 @@ public class EjemploRecorridoAnchura1 {
         grafo.addArista("F", "G");
 
         recorrerAnchura(grafo, "A");
-        System.out.println("");
+        System.out.println("e");
 
     }
 

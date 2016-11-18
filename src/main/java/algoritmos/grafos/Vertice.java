@@ -47,7 +47,14 @@ public class Vertice {
     public String caminoPara(Vertice v) {
         return mapaAdyacentes.get(v);
     }
-    
+    @Override
+    public boolean equals(Object o) {
+		if (o instanceof Vertice && ((Vertice) o).getDato().equals(this.dato)) {
+			return true;
+		}else {
+			return false;
+		}
+	}
     @Override
     public String toString() {
         return "{" + dato + "}";

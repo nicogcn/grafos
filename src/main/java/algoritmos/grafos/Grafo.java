@@ -11,6 +11,7 @@ public class Grafo {
     List<Vertice> vertices = new ArrayList<>();
 
     public Grafo() {
+    	
     }
         
     public Vertice addVertice(String dato){
@@ -18,7 +19,11 @@ public class Grafo {
         vertices.add(vertice);
         return vertice;
     }
-    
+    public Vertice addVertice(Vertice vertice){
+        
+        vertices.add(vertice);
+        return vertice;
+    }
     public Vertice getVertice(String dato) {
         for(Vertice v : vertices) {
             if (v.getDato().equals(dato)){
@@ -41,6 +46,7 @@ public class Grafo {
         Vertice v2 = getVertice(vertice2);
         if (v1 != null && v2 != null) {
             v1.agregarArista(v2, nombre);
+            v2.agregarArista(v1, nombre);
         }
     }
     public void imprimeVertices(){

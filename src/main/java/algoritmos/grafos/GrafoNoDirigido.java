@@ -25,8 +25,7 @@ public class GrafoNoDirigido extends Grafo {
         Vertice v2 = getVertice(vertice2);
         if (v1 != null && v2 != null) {
             v1.agregarArista(v2, nombre);
-            v2.agregarArista(v1, nombre);
-            
+            v2.agregarArista(v1, nombre);            
         }
     }    
 }

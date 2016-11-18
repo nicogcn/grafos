@@ -1,0 +1,11 @@
+pelicula1/nodo1/nodo2/nodo3/nodo4/nodo5
+pelicula2/nodo1/nodo2/nodo6/nodo9
+pelicula3/nodo1/nodo5/nodo7/nodo8
+pelicula4/nodo10/nodo51/nodo71/nodo81/nodo8
+pelicula5/nodo11/nodo52/nodo72/nodo82/nodo7
+pelicula6/nodo12/nodo53/nodo73/nodo83/nodo6
+pelicula7/nodo13/nodo56/nodo74/nodo84/nodo5
+pelicula9/nodo14/nodo55/nodo75/nodo85/nodo4
+pelicula10/nodo15/nodo56/nodo76/nodo86/nodo3
+pelicula11/nodo16/nodo57/nodo77/nodo87/nodo1
+pelicula12/nodo17/nodo58/nodo78/nodo88/nodo8
